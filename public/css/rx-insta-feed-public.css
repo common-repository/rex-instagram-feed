@@ -1,0 +1,903 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900");
+.rex-social-media-feed,
+.rex-social-media-feed p {
+    padding: 0px;
+    color: #454545;
+    font-size: 15px;
+    line-height: 26px;
+    margin: 0px auto;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.rex-social-media-feed {
+    box-sizing: border-box;
+}
+.rex-social-media-feed *,
+.rex-social-media-feed *:before,
+.rex-social-media-feed *:after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.rex-social-media-feed *:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.rex-social-media-feed img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    display: block;
+}
+.rex-social-media-feed p {
+    opacity: 0.7;
+}
+.rex-social-media-feed h1,
+.rex-social-media-feed h2,
+.rex-social-media-feed h3,
+.rex-social-media-feed h4,
+.rex-social-media-feed h5,
+.rex-social-media-feed h6,
+.rex-social-media-feed p,
+.rex-social-media-feed figur,
+.rex-social-media-feed a {
+    margin: 0px;
+    font-weight: normal;
+}
+.rex-social-media-feed h1,
+.rex-social-media-feed h2,
+.rex-social-media-feed h3,
+.rex-social-media-feed h4,
+.rex-social-media-feed h5,
+.rex-social-media-feed h6 {
+    color: #454545;
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+}
+.entry .entry-content a,
+.rex-social-media-feed a {
+    text-decoration: none;
+    color: #f60660;
+}
+.rex-social-media-feed a:hover,
+.rex-social-media-feed a:focus,
+.rex-social-media-feed input:focus,
+.rex-social-media-feed button:focus,
+.rex-social-media-feed a:active {
+    text-decoration: none;
+    outline: none;
+    outline-offset: 0px;
+    box-shadow: none;
+}
+.rex-social-media-feed ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.rex-social-media-feed input,
+.rex-social-media-feed textarea,
+.rex-social-media-feed select {
+    border: 1px solid #d1d1d1;
+    font-size: 14px;
+    padding: 8px 15px;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+.rex-social-media-feed textarea {
+    resize: none;
+}
+.rex-social-media-feed h1 {
+    font-size: 50px;
+    line-height: 65px;
+}
+.rex-social-media-feed h2 {
+    font-size: 40px;
+    line-height: 54px;
+}
+.rex-social-media-feed h3 {
+    font-size: 30px;
+    line-height: 38px;
+}
+.rex-social-media-feed h4 {
+    font-size: 24px;
+    line-height: 34px;
+}
+.rex-social-media-feed h5 {
+    font-size: 18px;
+    line-height: 28px;
+}
+.rex-social-media-feed h6 {
+    font-size: 16px;
+    line-height: 26px;
+}
+.rex-social-media-feed a {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline li {
+    display: inline-block;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.transition-3s,
+.rex-social-media-feed.rex-carousel .feed-body .owl-nav button,
+.rex-social-media-feed.rex-carousel .feed-body .owl-nav button span,
+.rex-social-media-feed.rex-carousel .feed-body .owl-dots .owl-dot span {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.transition-5s,
+.rex-social-media-feed .feed-body .single-image .img-overlay a,
+.rex-social-media-feed .feed-body .single-image .like-comment,
+.rex-social-media-feed .feed-footer .feed-button li a,
+.rex-social-media-feed.rex-details .feed-body .single-image .username,
+.rex-social-media-feed.rex-card .feed-body .single-image,
+.rex-social-media-feed.rex-card
+.feed-body
+.single-image
+.feed-img
+.provider-name,
+.rex-social-media-feed.rex-card .feed-body .single-image img .provider-name {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn-default {
+    display: block;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 20px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #f60660;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.visibility-hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visibility-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.position-center-XY-axis {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.position-center-X-axis {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.position-center-Y-axis {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.align-center-center {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-col-left-center {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.align-col-left-bottom {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.align-col-right-center {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.align-col-right-bottom {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.align-col-center-bottom {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.align-row-left-top {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.align-row-left-center {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.align-row-right-center {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.align-row-center-center {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-row-spacebetween {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.rex-social-media-feed {
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e4e5ee;
+}
+.rex-social-media-feed .feed-header h3 {
+    color: #565656;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.rex-social-media-feed .feed-body {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.rex-social-media-feed .feed-body .single-image {
+    position: relative;
+}
+.rex-social-media-feed .feed-body .single-image svg {
+    width: 20px;
+    height: 20px;
+}
+.rex-social-media-feed .feed-body .single-image .feed-img {
+    position: relative;
+    overflow: hidden;
+}
+.rex-social-media-feed .feed-body .single-image .feed-img img {
+    width: 100%;
+    border-radius: 3px;
+}
+.rex-social-media-feed .feed-body .single-image .feed-img .provider-name {
+    position: absolute;
+    font-size: 12px;
+    background: #f60660;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: 3px;
+    text-transform: capitalize;
+    line-height: 25px;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    display: none;
+}
+.rex-social-media-feed .feed-body .single-image .feed-img .provider-name svg {
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -1px;
+}
+.rex-social-media-feed .feed-body .single-image .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.rex-social-media-feed .feed-body .single-image .img-overlay a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(246, 6, 96, 0.7);
+    opacity: 0;
+}
+.rex-social-media-feed .feed-body .single-image .img-overlay a svg {
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    opacity: 0.2;
+    margin-bottom: 35px;
+}
+.rex-social-media-feed .feed-body .single-image:hover .img-overlay a {
+    opacity: 1;
+}
+.rex-social-media-feed .feed-body .single-image .username {
+    display: none;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    background: #f9fafe;
+    width: 100%;
+}
+.rex-social-media-feed .feed-body .single-image .username img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    margin-right: 14px;
+}
+.rex-social-media-feed .feed-body .single-image .username .name {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: normal;
+    margin-bottom: 3px;
+    color: #454545;
+}
+.rex-social-media-feed .feed-body .single-image .username .name:hover {
+    opacity: 0.7;
+}
+.rex-social-media-feed .feed-body .single-image .username .date {
+    display: block;
+    font-size: 12px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #454545;
+    opacity: 0.7;
+}
+.rex-social-media-feed .feed-body .single-image .username .date:hover {
+    opacity: 1;
+}
+.rex-social-media-feed .feed-body .single-image .like-comment {
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    border-top: 1px solid transparent;
+    margin-top: 33px;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    text-align: center;
+}
+.rex-social-media-feed .feed-body .single-image .like-comment .share {
+    display: none;
+}
+.rex-social-media-feed .feed-body .single-image .like-comment svg {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    margin-right: 4px;
+}
+.rex-social-media-feed .feed-body .single-image .like-comment a {
+    font-size: 14px;
+    line-height: normal;
+    margin-right: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.rex-social-media-feed .feed-body .single-image .like-comment a:last-child {
+    margin-right: 0;
+}
+.rex-social-media-feed .feed-body .single-image .like-comment a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+.rex-social-media-feed .feed-body .single-image:hover .like-comment {
+    opacity: 1;
+    visibility: visible;
+}
+.rex-social-media-feed .feed-footer {
+    margin-top: 20px;
+}
+.rex-social-media-feed .feed-footer .feed-button {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.rex-social-media-feed .feed-footer .feed-button li {
+    margin: 0 5px;
+}
+.rex-social-media-feed .feed-footer .feed-button li a {
+    border-radius: 3px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    background: #f60660;
+    padding: 0 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+.rex-social-media-feed .feed-footer .feed-button li a:hover {
+    background: rgba(246, 6, 96, 0.7);
+}
+.rex-social-media-feed .feed-footer .feed-button li a svg {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-right: 7px;
+}
+
+.rex-social-media-feed.rex-details .feed-body .single-image .img-overlay a svg {
+    margin-bottom: 0;
+}
+.rex-social-media-feed.rex-details .feed-body .single-image .username {
+    padding: 15px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+}
+.rex-social-media-feed.rex-details .feed-body .single-image .username .name {
+    color: #fff;
+}
+.rex-social-media-feed.rex-details .feed-body .single-image .username .date {
+    color: #fff;
+    text-transform: capitalize;
+}
+.rex-social-media-feed.rex-details .feed-body .single-image:hover .username {
+    opacity: 1;
+    visibility: visible;
+}
+.rex-social-media-feed.rex-details .feed-body .single-image .like-comment {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: inherit;
+    top: initial;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 20px;
+    -webkit-transform: inherit;
+    -moz-transform: inherit;
+    -ms-transform: inherit;
+    -o-transform: inherit;
+    transform: inherit;
+    margin-top: 0;
+    text-align: left;
+}
+.rex-social-media-feed.rex-details
+.feed-body
+.single-image
+.like-comment
+.share {
+    display: block;
+}
+
+.rex-social-media-feed.rex-card .feed-body .single-image {
+    box-shadow: 0px 1px 2px 0px rgba(0, 27, 103, 0.15);
+}
+.rex-social-media-feed.rex-card .feed-body .single-image:hover {
+    box-shadow: 0px 5px 15px 0px rgba(0, 27, 103, 0.2);
+}
+.rex-social-media-feed.rex-card .feed-body .single-image .feed-img,
+.rex-social-media-feed.rex-card .feed-body .single-image img {
+    border-radius: 3px 3px 0 0;
+}
+.rex-social-media-feed.rex-card
+.feed-body
+.single-image
+.feed-img
+.provider-name,
+.rex-social-media-feed.rex-card .feed-body .single-image img .provider-name {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+}
+.rex-social-media-feed.rex-card
+.feed-body
+.single-image:hover
+.feed-img
+.provider-name {
+    opacity: 1;
+    visibility: visible;
+}
+.rex-social-media-feed.rex-card .feed-body .single-image .img-overlay a {
+    background: transparent;
+}
+.rex-social-media-feed.rex-card .feed-body .single-image .img-overlay a svg {
+    display: none;
+}
+.rex-social-media-feed.rex-card .feed-body .single-image .username {
+    display: flex;
+}
+.rex-social-media-feed.rex-card .feed-body .single-image .like-comment {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9fafe;
+    border-top-color: rgba(184, 184, 184, 0.2);
+    padding: 12px 20px;
+    position: relative;
+    top: inherit;
+    right: inherit;
+    -webkit-transform: inherit;
+    -moz-transform: inherit;
+    -ms-transform: inherit;
+    -o-transform: inherit;
+    transform: inherit;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0 0 3px 3px;
+}
+.rex-social-media-feed.rex-card .feed-body .single-image .like-comment .share {
+    display: block;
+}
+.rex-social-media-feed.rex-card .feed-body .single-image .like-comment a {
+    color: rgba(69, 69, 69, 0.6);
+}
+.rex-social-media-feed.rex-card .feed-body .single-image .like-comment a:hover {
+    color: #454545;
+}
+
+.rex-social-media-feed {
+    max-width: 1040px !important;
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+}
+.rex-social-media-feed .feed-body {
+    margin-left: -10px;
+}
+.rex-social-media-feed .feed-body .single-image {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: calc(100% / 4 - 10px);
+    border-radius: 0;
+}
+.rex-social-media-feed .feed-body .single-image .feed-img {
+    height: 600px;
+    width: 100%;
+    border-radius: 0;
+}
+.rex-social-media-feed .feed-body .single-image .feed-img .bg-img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    -webkit-transform: scale(1.01, 1.01);
+    -moz-transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.01, 1.01);
+    -o-transform: scale(1.01, 1.01);
+    transform: scale(1.01, 1.01);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.rex-social-media-feed .feed-body .single-image .feed-img img {
+    display: none;
+}
+.rex-social-media-feed .feed-body .single-image:hover .feed-img .bg-img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+
+.rex-social-media-feed.rex-masonary .feed-body {
+    display: block;
+}
+.rex-social-media-feed.rex-masonary .feed-body .single-image {
+    /*float: left;*/
+    /*width: 205px;*/
+    overflow: hidden;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+.rex-social-media-feed.rex-masonary .feed-body .single-image .feed-img {
+    height: auto !important;
+}
+.rex-social-media-feed.rex-masonary .feed-body .single-image .feed-img .bg-img {
+    background-image: none !important;
+    display: none;
+}
+.rex-social-media-feed.rex-masonary .feed-body .single-image .feed-img img {
+    display: block !important;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+.rex-social-media-feed.rex-masonary
+.feed-body
+.single-image:hover
+.feed-img
+img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+.rex-social-media-feed.rex-masonary.rex-card
+.feed-body
+.single-image
+.like-comment {
+    top: initial;
+}
+
+.rex-social-media-feed.rex-carousel .feed-body {
+    margin-left: 0;
+}
+.rex-social-media-feed.rex-carousel .feed-body .single-image {
+    margin-left: 0;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.rex-social-media-feed.rex-carousel .feed-body .owl-nav button {
+    position: absolute;
+    top: 50%;
+    margin-top: -41px;
+    opacity: 0;
+    visibility: hidden;
+}
+.rex-social-media-feed.rex-carousel .feed-body .owl-nav button span {
+    display: block;
+    width: 32px;
+    font-size: 32px;
+    background: #eaeaea;
+    height: 32px;
+    line-height: 27px;
+    border-radius: 100%;
+    border: 1px solid #c7c7c7;
+    color: #c7c7c7;
+    cursor: pointer;
+}
+.rex-social-media-feed.rex-carousel .feed-body .owl-nav button:hover span {
+    background: rgba(246, 6, 96, 0.28);
+    border-color: #f60660;
+    color: #f60660;
+}
+.rex-social-media-feed.rex-carousel .feed-body .owl-nav .owl-prev {
+    left: -42px;
+}
+.rex-social-media-feed.rex-carousel .feed-body .owl-nav .owl-next {
+    right: -42px;
+}
+.rex-social-media-feed.rex-carousel .feed-body:hover .owl-nav button {
+    visibility: visible;
+    opacity: 1;
+}
+.rex-social-media-feed.rex-carousel .feed-body.inside-arrow .owl-nav .owl-prev {
+    left: 25px;
+}
+.rex-social-media-feed.rex-carousel .feed-body.inside-arrow .owl-nav .owl-next {
+    right: 25px;
+}
+.rex-social-media-feed.rex-carousel .feed-body .owl-dots {
+    text-align: center;
+    width: 100%;
+}
+.rex-social-media-feed.rex-carousel .feed-body .owl-dots .owl-dot span {
+    background: #fcb4cf;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin: 0px 2px;
+}
+.rex-social-media-feed.rex-carousel .feed-body .owl-dots .owl-dot.active span {
+    background: #f60660;
+}
+
+@media (max-width: 767px) {
+    .rex-social-media-feed {
+        padding: 55px 15px 65px;
+    }
+}
+@media (max-width: 1199px) {
+    .rex-social-media-feed .feed-body .single-image {
+        width: calc(100% / 4 - 10px);
+    }
+}
+@media (max-width: 991px) {
+    .rex-social-media-feed .feed-body .single-image {
+        width: calc(100% / 3 - 10px);
+    }
+}
+@media (max-width: 767px) {
+    .rex-social-media-feed .feed-body .single-image {
+        width: calc(100% / 2 - 10px);
+    }
+}
+@media (max-width: 575px) {
+    .rex-social-media-feed .feed-body .single-image {
+        width: calc(100% / 1 - 10px);
+    }
+}
+@media (max-width: 575px) {
+    .rex-social-media-feed .feed-footer .feed-button {
+        flex-flow: column wrap;
+    }
+}
+@media (max-width: 575px) {
+    .rex-social-media-feed .feed-footer .feed-button li {
+        margin: 5px 0;
+    }
+}
+@media (max-width: 575px) {
+    .rex-social-media-feed .feed-footer .feed-button li a {
+        padding: 0 20px;
+    }
+}
+
+
+
+/*--------preloader-------------*/
+.rex-front-preloader {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+}
+
+.rex-front-preloader span {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #f60660;
+    border-radius: 100%;
+
+    -webkit-animation: feed-preloader 1.5s linear infinite;
+    -o-animation: feed-preloader 1.5s linear infinite;
+    animation: feed-preloader 1.5s linear infinite;
+}
+
+.rex-front-preloader span:nth-child(2) {
+    -webkit-animation-delay: -0.8s;
+    -ms-animation-delay: -0.8s;
+    -o-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes feed-preloader {
+    from {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+@keyframes feed-preloader {
+    from {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 0;
+    }
+}

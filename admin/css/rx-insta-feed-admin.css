@@ -1,0 +1,2097 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900");
+
+#rx-insta-feed-admin * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#rx-insta-feed-admin *:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+#rx-insta-feed-admin .rex-form-group .rexTooltip > span,
+#rx-insta-feed-admin
+  .authorize-tab-content
+  .tab-content-body
+  .logout-btn
+  button,
+#rx-insta-feed-admin .mainTab .nav-tabs .nav-item:after,
+#rx-insta-feed-admin a {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__label,
+#rx-insta-feed-admin .connectedFeed button .fa-times-circle,
+#rx-insta-feed-admin input[type="button"],
+#rx-insta-feed-admin input[type="submit"],
+#rx-insta-feed-admin button,
+#rx-insta-feed-admin input,
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .tab-content
+  > .tab-pane
+  > .content-warapper
+  .nav-tabs
+  a:after,
+#rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item:before,
+#rx-insta-feed-admin .rexSwitcher .switch:checked + label::after,
+#rx-insta-feed-admin .rexSwitcher .switch:checked + label span::after,
+#rx-insta-feed-admin .rex-form-group .caret-icon {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*----------main nav-tabs styles ----------*/
+#rx-insta-feed-admin {
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+#rx-insta-feed-admin .wrap {
+  background: #f5f6fa;
+  margin-left: -20px !important;
+}
+#rx-insta-feed-admin .mainTab {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+}
+#rx-insta-feed-admin .mainTab > .nav-tabs {
+  border-bottom: none;
+  display: block;
+  width: 214px;
+  padding-top: 94px;
+  box-shadow: 2px 0px 0px 0px rgba(153, 159, 187, 0.1);
+  background: #fff;
+  align-self: stretch;
+  margin-bottom: 40px;
+}
+#rx-insta-feed-admin .mainTab > .nav-tabs .nav-item {
+  width: 100%;
+  padding: 21px 15px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+  border-radius: 0px;
+  font-weight: 500;
+  position: relative;
+  color: #8c8c8c;
+  letter-spacing: -0.2px;
+  border: none;
+  border-bottom: 1px solid rgba(228, 227, 227, 0.9);
+}
+#rx-insta-feed-admin .mainTab > .nav-tabs .nav-item:first-child {
+  border-top: 1px solid rgba(228, 227, 227, 0.9);
+}
+#rx-insta-feed-admin .mainTab > .nav-tabs .nav-item:before {
+  content: "";
+  height: 100%;
+  width: 4px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#rx-insta-feed-admin .mainTab > .nav-tabs .nav-item span {
+  width: 150px;
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+}
+#rx-insta-feed-admin .mainTab > .nav-tabs .nav-item span svg {
+  margin-right: 5px;
+}
+
+#rx-insta-feed-admin .mainTab > .nav-tabs .nav-item.active {
+  background: #f5f6fa;
+  color: #f60660;
+  border-bottom-color: #f5f6fa;
+  box-shadow: 0px 20px 20px 0px rgba(89, 99, 106, 0.15);
+}
+#rx-insta-feed-admin .mainTab > .nav-tabs .nav-item.active:before {
+  background: #f60660;
+}
+
+/*--------------main tab content------------*/
+#rx-insta-feed-admin .mainTab > .tab-content {
+  width: calc(100% - 256px);
+  margin-left: 1px;
+}
+
+/*-------stream parent tab content--------*/
+#rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content .nav-tabs,
+#rx-insta-feed-admin .stream-parent-tab > .nav-tabs {
+  background-color: #fff;
+  border-bottom: none;
+  box-shadow: 0px 2px 0px 0px rgba(153, 159, 187, 0.07);
+  align-items: center;
+  justify-content: flex-start;
+}
+#rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item {
+  color: #2c2326;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  margin: 0;
+  padding: 35px 26px;
+  display: inline-block;
+  border-right: 1px solid rgba(228, 227, 227, 0.9);
+  border-radius: 0;
+  position: relative;
+}
+#rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item .stream-title {
+  min-width: 95px;
+  max-width: 145px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+#rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  box-shadow: none;
+}
+#rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item.active {
+  background: #f5f6fa;
+  color: #f50660;
+  border-right-color: #f5f6fa;
+}
+#rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item.active:before {
+  background: #f50660;
+  box-shadow: 0px -4px 10px 0px rgba(217, 0, 81, 0.2);
+}
+#rx-insta-feed-admin .stream-parent-tab > .nav-tabs #rex-stream-repeat-tab-add {
+  padding-right: 0;
+  border-right: none;
+}
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .nav-tabs
+  #rex-stream-repeat-tab-add
+  span {
+  font-size: 14px;
+  padding: 12px 20px;
+  background: #f60660;
+  color: #fff;
+  border-radius: 5px;
+}
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .nav-tabs
+  #rex-stream-repeat-tab-add
+  span
+  svg {
+  position: relative;
+  top: 1px;
+  margin-left: 3px;
+}
+
+#rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content > .tab-content,
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .tab-content
+  > .tab-pane
+  > .content-warapper {
+  padding-left: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+#rx-insta-feed-admin .stream-parent-tab > .tab-content > .tab-pane {
+  position: relative;
+}
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .tab-content
+  > .tab-pane
+  .deleteStream {
+  position: absolute;
+  top: 56px;
+  padding: 0;
+  line-height: 30px;
+  height: 30px;
+  border-radius: 0;
+  right: 0;
+  background: none;
+  color: #f60660;
+  z-index: 1;
+}
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .tab-content
+  > .tab-pane
+  > .content-warapper
+  .nav-tabs {
+  border: none;
+}
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .tab-content
+  > .tab-pane
+  > .content-warapper
+  .nav-tabs
+  a {
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(89, 99, 106, 0.1);
+  color: #f60660;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  border: none;
+  padding: 8px 25px;
+  margin-right: 10px;
+  position: relative;
+  border-radius: 4px;
+}
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .tab-content
+  > .tab-pane
+  > .content-warapper
+  .nav-tabs
+  a.active {
+  background: #f60660;
+  color: #fff;
+}
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .tab-content
+  > .tab-pane
+  > .content-warapper
+  .nav-tabs
+  a:after {
+  content: "";
+  border-top: 6px solid transparent;
+  border-left: 6px solid #f60660;
+  border-bottom: 6px solid transparent;
+  top: inherit;
+  right: 50%;
+  bottom: -9px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(50%) rotate(90deg);
+  -moz-transform: translateX(50%) rotate(90deg);
+  -ms-transform: translateX(50%) rotate(90deg);
+  -o-transform: translateX(50%) rotate(90deg);
+  transform: translateX(50%) rotate(90deg);
+}
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .tab-content
+  > .tab-pane
+  > .content-warapper
+  .nav-tabs
+  a.active:after {
+  opacity: 1;
+  visibility: visible;
+}
+#rx-insta-feed-admin
+  .stream-parent-tab
+  > .tab-content
+  > .tab-pane
+  > .content-warapper
+  > .tab-content {
+  background: #fff;
+  box-shadow: 0px -1px 1px 0px rgba(153, 159, 187, 0.09);
+  margin-top: 30px;
+  border-radius: 5px 5px 0 0;
+  padding: 60px;
+}
+
+/*-----------*/
+#rx-insta-feed-admin #rex-feed-tabpane-stream .nav-tabs .disabled {
+  border-color: rgba(246, 6, 96, 0.2);
+  color: #a9a6a6;
+  cursor: not-allowed;
+}
+#rx-insta-feed-admin .radio-common li.pro:before,
+#rx-insta-feed-admin #rex-feed-tabpane-stream .nav-tabs .disabled:before {
+  content: "pro";
+  position: absolute;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  top: -14px;
+  right: -4px;
+  border: 1px solid #f60660;
+  border-radius: 3px;
+  background: #f60660;
+  padding: 0 3px;
+  text-transform: lowercase;
+  line-height: 14px;
+  width: 28px;
+  text-align: center;
+}
+
+#rx-insta-feed-admin
+  #rex-feed-tabpane-stream
+  .nav-tabs
+  #rex-feed-tab-layout.disabled::before {
+  display: none;
+}
+
+/*-------radio button style---------*/
+#rx-insta-feed-admin .radio-common {
+  margin-bottom: 0;
+}
+#rx-insta-feed-admin .radio-common li {
+  margin-bottom: 0;
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+#rx-insta-feed-admin .radio-common li:last-child {
+  margin-right: 0;
+}
+#rx-insta-feed-admin .radio-common li label {
+  color: #454545;
+  font-size: 15px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+#rx-insta-feed-admin .radio-common li input[type="radio"] {
+  display: none;
+}
+#rx-insta-feed-admin .radio-common li input[type="radio"] + label span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: -1px 10px 0 0;
+  vertical-align: middle;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#rx-insta-feed-admin .radio-common li input[type="radio"] + label span {
+  border: 1px solid #e7e6e6;
+  position: relative;
+  background: #e7e6e6;
+}
+#rx-insta-feed-admin .radio-common li input[type="radio"] + label span::before {
+  background: #f60660;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  height: 12px;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#rx-insta-feed-admin .radio-common li input[type="radio"]:checked + label span {
+  border-color: #f60660;
+  background: transparent;
+}
+#rx-insta-feed-admin
+  .radio-common
+  li
+  input[type="radio"]:checked
+  + label
+  span:before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#rx-insta-feed-admin .radio-common li input[type="radio"] + label span,
+#rx-insta-feed-admin .radio-common li input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+/*-------input field and label style--------*/
+#rx-insta-feed-admin .rex-form-group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+#rx-insta-feed-admin .rex-form-group:last-child {
+  margin-bottom: 0;
+}
+#rx-insta-feed-admin .rex-form-group .input-title {
+  font-size: 18px;
+  color: #454545;
+  font-weight: 500;
+  min-width: 251px;
+  margin-right: 80px;
+  /* text-transform: capitalize; */
+}
+
+#rx-insta-feed-admin .rex-form-group .rrs__label,
+#rx-insta-feed-admin input {
+  border: 1px solid #e4e3e3;
+  box-shadow: none;
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 6px 20px;
+  height: 50px;
+  width: 320px;
+  color: #454545;
+}
+#rx-insta-feed-admin input:focus {
+  border: 1px solid #f60660;
+}
+#rx-insta-feed-admin input::-webkit-input-placeholder {
+  color: #8c8c8c;
+}
+#rx-insta-feed-admin input::-moz-placeholder {
+  color: #8c8c8c;
+}
+#rx-insta-feed-admin input:-ms-input-placeholder {
+  color: #8c8c8c;
+}
+#rx-insta-feed-admin input:-moz-placeholder {
+  color: #8c8c8c;
+}
+
+#rx-insta-feed-admin .chrome-picker input {
+  padding: 3px 5px;
+}
+#rx-insta-feed-admin .chrome-picker .flexbox-fix svg {
+  margin-top: -25px;
+}
+
+#rx-insta-feed-admin #rex-feed-tabpane-stream .btnStyle .btnTypho input {
+  width: 110px;
+  margin-right: 10px;
+}
+
+#rx-insta-feed-admin .stream-name-typo .input-title {
+  margin-right: 75px;
+}
+#rx-insta-feed-admin .stream-name-typo input {
+  width: 110px;
+  margin-right: 10px;
+}
+
+#rx-insta-feed-admin .glryBorderOption.rex-form-group input {
+  width: 95px;
+  margin-right: 10px;
+}
+#rx-insta-feed-admin .glryBorderOption.rex-form-group .rrs__label {
+  width: 120px;
+}
+#rx-insta-feed-admin .glryBorderOption.rex-form-group .rex-color-picker {
+  margin-left: 10px;
+}
+
+/*-----input select style------*/
+#rx-insta-feed-admin .rex-form-group .rrs__button {
+  color: #454545;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 0;
+  box-shadow: none;
+}
+#rx-insta-feed-admin
+  .rex-form-group
+  .rrs__label__text[aria-label="Please select"] {
+  color: #909092;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__label__text {
+  line-height: 37px;
+  font-size: 16px;
+  color: #454545;
+}
+#rx-insta-feed-admin .rex-form-group .caret-icon {
+  right: 18px;
+  top: 23px;
+  fill: #909092;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options {
+  border: 1px solid #cccfe4;
+  border-top: 1px solid #cccfe4;
+  box-shadow: none;
+  top: 50px;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__option {
+  padding: 7px 15px;
+  color: #454545;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options li span {
+  display: block;
+  text-transform: capitalize;
+  color: #454545;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options li span svg {
+  float: right;
+  position: relative;
+  top: 4px;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__option.rrs__option--next-selection {
+  background: #f3f3f3;
+  color: #454545;
+}
+#rx-insta-feed-admin
+  .rex-form-group
+  .rrs__button[aria-expanded="true"]
+  .rrs__label {
+  border-color: #f60660;
+}
+
+/*------button style--------*/
+#rx-insta-feed-admin .rex-form-group.save-button {
+  margin-top: 70px;
+}
+#rx-insta-feed-admin input[type="button"],
+#rx-insta-feed-admin input[type="submit"],
+#rx-insta-feed-admin button {
+  border-radius: 5px;
+  height: 50px;
+  background: #f60660;
+  line-height: 50px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/*------------layout tab content-------*/
+#rx-insta-feed-admin .radio-common li.pro:before {
+  right: -10px;
+}
+#rx-insta-feed-admin .radio-common li.pro label {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+#rx-insta-feed-admin .rex-form-group .hints {
+  font-size: 14px;
+  color: #909092;
+  margin-left: 20px;
+}
+#rx-insta-feed-admin .rex-form-group .rexTooltip {
+  position: relative;
+  margin-left: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  line-height: 36px;
+  background: #e7e6e6;
+  text-align: center;
+  cursor: help;
+}
+#rx-insta-feed-admin .rex-form-group .rexTooltip svg {
+  color: #f60660;
+  font-size: 14px;
+}
+#rx-insta-feed-admin .rex-form-group .rexTooltip > span {
+  position: absolute;
+  min-width: 240px;
+  font-size: 14px;
+  line-height: 20px;
+  background: #e7e6e6;
+  padding: 6px 10px;
+  border-radius: 5px;
+  top: 50%;
+  left: 50px;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#rx-insta-feed-admin .rex-form-group .rexTooltip:hover > span {
+  opacity: 1;
+  visibility: visible;
+}
+
+#rx-insta-feed-admin .rex-form-group .rexTooltip > span:before {
+  content: "";
+  border-top: 6px solid transparent;
+  border-left: 6px solid #e7e6e6;
+  border-bottom: 6px solid transparent;
+  left: -6px;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+  -moz-transform: translateY(-50%) rotate(-180deg);
+  -ms-transform: translateY(-50%) rotate(-180deg);
+  -o-transform: translateY(-50%) rotate(-180deg);
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+/*-------------button-style tab content-----*/
+#rx-insta-feed-admin #rex-feed-tabpane-layout .carousel-option-title,
+#rx-insta-feed-admin #rex-feed-tabpane-button-style .iconBtn-title,
+#rx-insta-feed-admin #rex-feed-tabpane-button-style .load-more-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f60660;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 16px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#rx-insta-feed-admin #rex-feed-tabpane-button-style .iconBtn-title {
+  padding-top: 15px;
+}
+
+/*-------------shortcode tab content-------------*/
+#rx-insta-feed-admin .shortcode-tab .rex-form-group {
+  display: block;
+}
+#rx-insta-feed-admin .shortcode-tab .rex-form-group .input-title {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #f60660;
+  font-weight: 700;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 25px;
+  margin-right: 0;
+  padding-bottom: 11px;
+}
+#rx-insta-feed-admin .shortcode-tab .rex-form-group input {
+  color: #2c2326;
+  font-weight: 500;
+  font-size: 18px;
+  width: 400px;
+  background: transparent;
+}
+#rx-insta-feed-admin .shortcode-tab .rex-form-group input:focus {
+  border-color: #e4e3e3;
+}
+#rx-insta-feed-admin .shortcode-tab .rex-form-group .copyClipboard {
+  display: inline-block;
+  height: 51px;
+  vertical-align: middle;
+  width: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid #e4e3e3;
+  border-radius: 5px;
+  padding: 10px 8px;
+  text-align: center;
+  margin-left: 10px;
+  position: relative;
+  top: -2px;
+  color: #b3b2b2;
+}
+#rx-insta-feed-admin .shortcode-tab .rex-form-group .copyedConfirmation {
+  margin-left: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #454545;
+  font-weight: 500;
+}
+
+/*------------------created stream list section-----------*/
+#rx-insta-feed-admin .feedListWrapper {
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+#rx-insta-feed-admin .stream-list {
+  background: #fff;
+  padding: 40px 40px;
+  border-radius: 5px 5px 0 0;
+}
+#rx-insta-feed-admin .stream-list h6.title,
+#rx-insta-feed-admin .stream-connect h6.title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #242424;
+  text-transform: capitalize;
+  background: #f5f6fa;
+  margin-bottom: 15px;
+  padding: 15px 50px;
+  position: relative;
+}
+#rx-insta-feed-admin .stream-list h6.title:before,
+#rx-insta-feed-admin .stream-connect h6.title:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background: #f60660;
+  border-radius: 100%;
+  top: 22px;
+  left: 30px;
+}
+
+#rx-insta-feed-admin .stream-connect .rex-form-group .rrs__button,
+#rx-insta-feed-admin .stream-connect .rex-form-group .rrs__label {
+  width: 320px;
+  height: 50px;
+}
+#rx-insta-feed-admin .stream-connect .rex-form-group .rrs__label__text {
+  line-height: 37px;
+  text-transform: capitalize;
+}
+#rx-insta-feed-admin .stream-connect .rex-form-group button {
+  height: 50px;
+  line-height: 51px;
+  margin-left: 10px;
+}
+#rx-insta-feed-admin .stream-connect .rex-form-group .caret-icon {
+  top: 23px;
+}
+
+#rx-insta-feed-admin .connectedFeed {
+  display: block;
+}
+#rx-insta-feed-admin .connectedFeed .input-title {
+  display: block;
+  margin-bottom: 11px;
+}
+#rx-insta-feed-admin .connectedFeed button {
+  font-size: 15px;
+  font-weight: 400;
+  color: #2c2326;
+  text-transform: capitalize;
+  border: 1px solid #e7e6e6;
+  border-radius: 5px;
+  background: #fff;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: default;
+}
+#rx-insta-feed-admin .connectedFeed button svg {
+  color: #f60660;
+  margin-right: 5px;
+}
+#rx-insta-feed-admin .connectedFeed button:hover {
+  box-shadow: 0px 10px 20px 0px rgba(89, 99, 106, 0.1);
+  border-color: transparent;
+}
+#rx-insta-feed-admin .connectedFeed button .fa-times-circle {
+  position: absolute;
+  background: #fedae7;
+  border-radius: 100%;
+  font-size: 23px;
+  top: -13px;
+  right: -15px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+#rx-insta-feed-admin .connectedFeed button:hover .fa-times-circle {
+  opacity: 1;
+  visibility: visible;
+}
+#rx-insta-feed-admin #rex-feed-tabpane-general .save-button {
+  margin-top: 50px;
+}
+
+/*----------------stream list style------------*/
+#rx-insta-feed-admin .stream-list .list-wrapper > ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e4e3e3;
+  padding: 13px 0;
+}
+#rx-insta-feed-admin .stream-list .list-wrapper > ul li {
+  margin-bottom: 0;
+}
+#rx-insta-feed-admin .stream-list ul li.stream-sl span {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e5e4e4;
+  display: flex;
+  padding: 2px;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #565656;
+  border-radius: 100%;
+  background: #fff;
+  position: relative;
+  line-height: normal;
+}
+#rx-insta-feed-admin .stream-list ul li.stream-sl span:before {
+  content: "";
+  position: absolute;
+  background: #ccc;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  right: 0;
+  top: 0;
+}
+#rx-insta-feed-admin .stream-list ul li.stream-sl.active span:before {
+  background: #3cdb11;
+}
+#rx-insta-feed-admin .stream-list ul li.stream-name {
+  font-size: 18px;
+  color: #454545;
+  width: 100%;
+  max-width: 270px;
+  padding-right: 15px;
+}
+#rx-insta-feed-admin .stream-list ul li.action-btn a {
+  font-size: 18px;
+  color: rgba(86, 86, 86, 0.61);
+  margin-right: 10px;
+  padding: 6px;
+}
+#rx-insta-feed-admin .stream-list ul li.action-btn a:hover {
+  color: #f60660;
+}
+#rx-insta-feed-admin .stream-list ul li.action-btn a:last-child {
+  margin-right: 0;
+}
+
+#rx-insta-feed-admin .stream-list ul li.stream-type {
+  min-width: 100px;
+  text-align: center;
+  padding-right: 15px;
+}
+#rx-insta-feed-admin .stream-list ul li.stream-type span {
+  font-size: 20px;
+  margin: 0 4px;
+}
+#rx-insta-feed-admin .stream-list ul li.stream-type span svg {
+  color: #565656;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-instagram,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-instagram {
+  color: #f60660;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-facebook-f,
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-facebook,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-facebook-f,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-facebook {
+  color: #4267b2;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-twitter,
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-twitter-square,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-twitter,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-twitter-square {
+  color: #38a1f3;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-linkedin-in,
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-linkedin,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-linkedin-in,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-linkedin {
+  color: #0077b5;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-dribbble,
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-dribbble-square,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-dribbble,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-dribbble-square {
+  color: #ea4c89;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-youtube,
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-youtube-square,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-youtube,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-youtube-square {
+  color: #c4302b;
+}
+#rx-insta-feed-admin .rex-form-group .rrs__options li span .fa-google-plus-g,
+#rx-insta-feed-admin
+  .rex-form-group
+  .rrs__options
+  li
+  span
+  .fa-google-plus-square,
+#rx-insta-feed-admin .stream-list ul li.stream-type span .fa-google-plus-g,
+#rx-insta-feed-admin
+  .stream-list
+  ul
+  li.stream-type
+  span
+  .fa-google-plus-square {
+  color: #dd4b39;
+}
+
+#rx-insta-feed-admin .stream-list .list-wrapper > ul li.shortcode-txt {
+  max-width: 320px;
+  width: 100%;
+  text-align: right;
+}
+#rx-insta-feed-admin .stream-list ul li.shortcode-txt p {
+  font-size: 18px;
+  color: #565656;
+  position: relative;
+}
+#rx-insta-feed-admin .stream-list ul li.shortcode-txt p span {
+  height: 37px;
+  background: #fff;
+  border: 1px solid #c1c6e0;
+  font-size: 16px;
+  line-height: 37px;
+  color: #565656;
+  display: inline-block;
+  padding: 0 65px 0 15px;
+  margin-left: 6px;
+  border-radius: 3px;
+}
+#rx-insta-feed-admin .stream-list ul li.shortcode-txt p .copyClick {
+  position: absolute;
+  color: #f60660;
+  font-size: 18px;
+  right: 5px;
+  top: 3px;
+  padding: 5px 10px;
+  line-height: normal;
+}
+
+/*----------------Feed list style------------*/
+#rx-insta-feed-admin .feed-list .list-wrapper > ul {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+#rx-insta-feed-admin .stream-list .list-wrapper > ul.list-header li.last-update,
+#rx-insta-feed-admin .stream-list .list-wrapper > ul.list-header li {
+  font-size: 15px;
+  font-weight: 700;
+  color: #242424;
+  text-transform: uppercase;
+}
+#rx-insta-feed-admin .feed-list .list-wrapper > ul li.stream-sl {
+  width: 55px;
+  min-width: 50px;
+  padding-right: 15px;
+}
+#rx-insta-feed-admin .feed-list .list-wrapper > ul li.action-btn {
+  width: 110px;
+  min-width: 88px;
+  padding-right: 15px;
+}
+#rx-insta-feed-admin .feed-list .list-wrapper > ul li.settings {
+  width: 100%;
+  max-width: 295px;
+  padding-right: 15px;
+}
+#rx-insta-feed-admin .feed-list .list-wrapper > ul li.settings span {
+  background: #fee6ef;
+  color: #f60660;
+  display: inline-block;
+  padding: 1px 8px;
+  margin: 2px 2px;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+}
+#rx-insta-feed-admin .feed-list .list-wrapper > ul li.last-update {
+  font-size: 15px;
+  color: #817f7f;
+  width: 100%;
+  max-width: 260px;
+  padding-right: 15px;
+}
+#rx-insta-feed-admin .feed-list .list-wrapper > ul li.activeness {
+  max-width: 80px;
+  min-width: 80px;
+  width: 100%;
+}
+
+/*--switch style---*/
+#rx-insta-feed-admin .rexSwitcher .switch {
+  visibility: hidden;
+  margin-left: -9999px;
+  position: absolute;
+  width: auto;
+}
+#rx-insta-feed-admin .rexSwitcher label {
+  margin-bottom: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#rx-insta-feed-admin .rexSwitcher .switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border-radius: 80px;
+  border: 2px solid #ddd;
+  user-select: none;
+  height: 35px;
+  width: 80px;
+}
+#rx-insta-feed-admin .rexSwitcher .switch:checked + label {
+  border-color: #f60660;
+}
+#rx-insta-feed-admin .rexSwitcher .switch + label:before {
+  right: 0px;
+  background: transparent;
+  border-radius: 75px;
+}
+#rx-insta-feed-admin .rexSwitcher .switch + label:before,
+#rx-insta-feed-admin .rexSwitcher .switch + label:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 4px;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#rx-insta-feed-admin .rexSwitcher .switch + label:after {
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  background-color: #ddd;
+  top: 3px;
+}
+#rx-insta-feed-admin .rexSwitcher .switch:checked + label:after {
+  margin-left: 44px;
+}
+
+#rx-insta-feed-admin .rexSwitcher label span::before,
+#rx-insta-feed-admin .rexSwitcher label span::after {
+  color: #bfc6cf;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#rx-insta-feed-admin .rexSwitcher label span::after {
+  content: "No";
+  right: 16px;
+}
+#rx-insta-feed-admin .rexSwitcher label span::before {
+  content: "Yes";
+  left: 12px;
+  color: #f60660;
+  opacity: 0;
+  visibility: hidden;
+}
+#rx-insta-feed-admin .rexSwitcher .switch:checked + label span::after {
+  opacity: 0;
+  visibility: hidden;
+}
+#rx-insta-feed-admin .rexSwitcher .switch:checked + label span::before {
+  opacity: 1;
+  visibility: visible;
+}
+#rx-insta-feed-admin .rexSwitcher .switch:checked + label::after {
+  background-color: #f60660;
+}
+
+/*----------Color picker style--------*/
+#rx-insta-feed-admin .rex-form-group .rex-color-picker {
+  height: 50px;
+  border: 1px solid #e4e3e3;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 3px;
+}
+#rx-insta-feed-admin .rex-form-group .rex-color-picker .select-color {
+  font-size: 16px;
+  color: #909092;
+  text-transform: capitalize;
+  padding: 0 30px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-left: 1px solid #e4e3e3;
+  display: inline-block;
+  width: calc(100% - 48px);
+}
+#rx-insta-feed-admin .rex-form-group.galleryBg .rex-color-picker .select-color {
+  width: 268px;
+}
+
+/*---------------Feeds tab content-------------*/
+#rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content .content-wrapper {
+  padding: 54px 60px;
+  background: #fff;
+  border-radius: 5px;
+}
+#rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content .nav-tabs {
+  padding: 27px 32px 27px 36px;
+}
+#rx-insta-feed-admin
+  #rex-feed-tabpane-feeds
+  .feed-content
+  > .nav-tabs
+  .nav-item {
+  color: #8c8c8c;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  display: inline-block;
+  border: 1px solid #e4e3e3;
+  border-radius: 3px;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  padding: 4px 8px;
+  text-align: center;
+  margin-right: 15px;
+}
+#rx-insta-feed-admin
+  #rex-feed-tabpane-feeds
+  .feed-content
+  > .nav-tabs
+  #rex-stream-repeat-tab-createFeedStream {
+  width: auto;
+  color: #454545;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 0;
+  height: auto;
+  border: none;
+  margin-right: 68px;
+}
+#rx-insta-feed-admin
+  #rex-feed-tabpane-feeds
+  .feed-content
+  > .nav-tabs
+  .nav-item:last-child {
+  margin-right: 0;
+}
+#rx-insta-feed-admin
+  #rex-feed-tabpane-feeds
+  .feed-content
+  > .nav-tabs
+  .nav-item.active {
+  color: #fff;
+  background: #f60660;
+  border-color: #f60660;
+}
+#rx-insta-feed-admin
+  #rex-feed-tabpane-feeds
+  .feed-content
+  .content-wrapper
+  .save-button
+  .cancel {
+  margin-left: 15px;
+}
+
+/*------------Settings tab content----------*/
+#rx-insta-feed-admin .status-tab-content .tab-content-header,
+#rx-insta-feed-admin .settings-tab-content .settings-tab-header,
+#rx-insta-feed-admin .authorize-tab-content .tab-content-header {
+  padding: 27px 32px 27px 39px;
+  background-color: #fff;
+  border-bottom: none;
+  box-shadow: 0px 2px 0px 0px rgba(153, 159, 187, 0.07);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+#rx-insta-feed-admin .status-tab-content .tab-content-header .icon,
+#rx-insta-feed-admin .settings-tab-content .settings-tab-header .icon,
+#rx-insta-feed-admin .authorize-tab-content .tab-content-header .icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: #f60660;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-right: 16px;
+}
+#rx-insta-feed-admin .status-tab-content .tab-content-header h6,
+#rx-insta-feed-admin .settings-tab-content .settings-tab-header h6,
+#rx-insta-feed-admin .authorize-tab-content .tab-content-header h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #454545;
+  margin-bottom: 0;
+}
+
+#rx-insta-feed-admin .authorize-tab-content .tab-content-body,
+#rx-insta-feed-admin .settings-tab-content .content-wrapper,
+#rx-insta-feed-admin .status-tab-content .content-wrapper {
+  padding: 60px;
+  background: #fff;
+  margin: 50px 0 40px 40px;
+  border-radius: 5px 5px 0 0;
+}
+#rx-insta-feed-admin .settings-tab-content .rex-form-group input {
+  width: 100px;
+  margin-right: 10px;
+}
+
+/*------------Authorization tab content----------*/
+#rx-insta-feed-admin
+  .authorize-tab-content
+  .tab-content-body
+  .rex-form-group
+  .input-title {
+  min-width: 144px;
+}
+#rx-insta-feed-admin
+  .authorize-tab-content
+  .tab-content-body
+  .rex-form-group
+  input {
+  width: 100%;
+  max-width: 570px;
+}
+#rx-insta-feed-admin .authorize-tab-content .tab-content-body .logout-btn {
+  margin-left: 227px;
+}
+#rx-insta-feed-admin
+  .authorize-tab-content
+  .tab-content-body
+  .logout-btn
+  .manually_connect {
+  font-size: 16px;
+  color: #418ce1;
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 26px;
+  display: inline-block;
+}
+#rx-insta-feed-admin
+  .authorize-tab-content
+  .tab-content-body
+  .logout-btn
+  .manually_connect:hover {
+  text-decoration: none;
+}
+#rx-insta-feed-admin
+  .authorize-tab-content
+  .tab-content-body
+  .logout-btn
+  button {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #e1e1e1;
+  color: #454545;
+  height: 37px;
+  line-height: 37px;
+  background: transparent;
+  margin-top: 23px;
+}
+#rx-insta-feed-admin
+  .authorize-tab-content
+  .tab-content-body
+  .logout-btn
+  button:hover {
+  background: #e1e1e1;
+}
+
+#rx-insta-feed-admin .status-tab-content .content-wrapper ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 8px 0;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+#rx-insta-feed-admin .status-tab-content .content-wrapper ul li .title {
+  min-width: 150px;
+  display: inline-block;
+}
+#rx-insta-feed-admin .status-tab-content .content-wrapper ul li .value {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+#rx-insta-feed-admin .status-tab-content .content-wrapper ul li .value svg {
+  font-size: 18px;
+  margin-left: 10px;
+}
+#rx-insta-feed-admin
+  .status-tab-content
+  .content-wrapper
+  ul
+  li
+  .value
+  .fa-check-circle {
+  color: #26bd26;
+}
+#rx-insta-feed-admin
+  .status-tab-content
+  .content-wrapper
+  ul
+  li
+  .value
+  .fa-times-circle {
+  color: #f60660;
+}
+#rx-insta-feed-admin .status-tab-content .content-wrapper ul li .value small {
+  color: #a2a2a2;
+  font-size: 14px;
+  margin-left: 8px;
+  font-style: italic;
+}
+
+/*-------------page pre preloader------------*/
+#loading {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  margin-top: 0px;
+  top: 0px;
+  z-index: 999;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-left: -140px;
+}
+#preloader span {
+  position: absolute;
+  border: 8px solid #ffffff;
+  border-top: 8px solid transparent;
+  border-radius: 999px;
+}
+
+#preloader span:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin-1 2s infinite linear;
+  animation: spin-1 2s infinite linear;
+}
+#preloader span:nth-child(2) {
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin-2 1s infinite linear;
+  animation: spin-2 1s infinite linear;
+}
+@-webkit-keyframes spin-1 {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes spin-1 {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes spin-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*-----------------------responsive style-----------------*/
+@media (max-width: 1499px) {
+  #rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item {
+    padding: 35px 22px;
+  }
+  #rx-insta-feed-admin .rex-form-group .input-title {
+    margin-right: 40px;
+  }
+  #rx-insta-feed-admin .rex-form-group .rrs__label,
+  #rx-insta-feed-admin input {
+    width: 290px;
+  }
+
+  #rx-insta-feed-admin #rex-feed-tabpane-stream .btnStyle .btnTypho input {
+    width: 90px;
+  }
+  #rx-insta-feed-admin .rex-form-group .rex-color-picker .select-color {
+    padding: 0 25px;
+  }
+  #rx-insta-feed-admin .authorize-tab-content .tab-content-body .logout-btn {
+    margin-left: 186px;
+  }
+} /*1400-1499px*/
+
+@media (max-width: 1399px) {
+  #rx-insta-feed-admin .mainTab > .nav-tabs {
+    width: 185px;
+    margin-bottom: 20px;
+  }
+  #rx-insta-feed-admin .mainTab > .tab-content {
+    width: calc(100% - 210px);
+  }
+  #rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content > .tab-content,
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    > .content-warapper {
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    > .content-warapper
+    .nav-tabs
+    a {
+    padding: 7px 20px;
+  }
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    .deleteStream {
+    top: 34px;
+  }
+  #rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item {
+    padding: 35px 20px;
+  }
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    > .content-warapper
+    > .tab-content {
+    padding: 30px;
+  }
+  #rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content .nav-tabs {
+    padding: 27px 20px 27px 20px;
+  }
+  #rx-insta-feed-admin .status-tab-content .tab-content-header,
+  #rx-insta-feed-admin .settings-tab-content .settings-tab-header,
+  #rx-insta-feed-admin .authorize-tab-content .tab-content-header {
+    padding: 27px 20px 27px 20px;
+  }
+
+  #rx-insta-feed-admin .rex-form-group .input-title {
+    margin-right: 15px;
+  }
+  #rx-insta-feed-admin .rex-form-group .rrs__label,
+  #rx-insta-feed-admin input {
+    width: 250px;
+  }
+  #rx-insta-feed-admin .rex-form-group .rexTooltip > span {
+    min-width: 215px;
+  }
+  #rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content .content-wrapper {
+    padding: 24px 30px;
+  }
+
+  #rx-insta-feed-admin .feedListWrapper {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  #rx-insta-feed-admin .stream-list {
+    padding: 30px 30px;
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul li.last-update {
+    font-size: 15px;
+  }
+
+  #rx-insta-feed-admin .status-tab-content .content-wrapper,
+  #rx-insta-feed-admin .authorize-tab-content .tab-content-body,
+  #rx-insta-feed-admin .settings-tab-content .content-wrapper {
+    padding: 30px;
+    margin: 30px 0 20px 20px;
+  }
+  #rx-insta-feed-admin .authorize-tab-content .tab-content-body .logout-btn {
+    margin-left: 160px;
+  }
+} /*--1200-1399px--*/
+
+@media (max-width: 1199px) {
+  #rx-insta-feed-admin .mainTab > .nav-tabs {
+    width: 165px;
+    padding-top: 64px;
+  }
+  #rx-insta-feed-admin .mainTab > .nav-tabs .nav-item {
+    padding: 15px 15px;
+    font-size: 16px;
+  }
+  #rx-insta-feed-admin .mainTab > .nav-tabs .nav-item:before {
+    width: 3px;
+  }
+
+  #rx-insta-feed-admin .mainTab > .tab-content {
+    width: calc(100% - 185px);
+  }
+  #rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item {
+    padding: 20px 14px;
+  }
+  #rx-insta-feed-admin .stream-parent-tab > .nav-tabs .nav-item:before {
+    height: 2px;
+  }
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .nav-tabs
+    #rex-stream-repeat-tab-add
+    span {
+    padding: 10px 15px;
+  }
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .nav-tabs
+    #rex-stream-repeat-tab-add
+    span
+    svg {
+    top: 0px;
+  }
+
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    > .content-warapper
+    .nav-tabs
+    a {
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    .deleteStream {
+    top: 30px;
+  }
+
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    > .content-warapper
+    > .tab-content {
+    margin-top: 20px;
+    padding: 30px 20px;
+  }
+  #rx-insta-feed-admin .rex-form-group .input-title {
+    font-size: 16px;
+    min-width: 200px;
+  }
+  #rx-insta-feed-admin .connectedFeed button {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 0 18px;
+    line-height: 40px;
+    height: 40px;
+  }
+  #rx-insta-feed-admin .connectedFeed button .fa-times-circle {
+    top: -12px;
+    right: -12px;
+  }
+
+  #rx-insta-feed-admin .rex-form-group .hints {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    padding-left: 218px;
+    margin-top: 4px;
+  }
+  #rx-insta-feed-admin .stream-name-typo .hints {
+    padding-left: 246px;
+  }
+  #rx-insta-feed-admin
+    .rex-form-group.galleryBg
+    .rex-color-picker
+    .select-color {
+    width: 199px;
+  }
+  #rx-insta-feed-admin .glryBorderOption.rex-form-group input {
+    width: 78px;
+    padding: 6px 12px;
+  }
+  #rx-insta-feed-admin .glryBorderOption.rex-form-group .rrs__label {
+    width: 110px;
+  }
+  #rx-insta-feed-admin .rex-form-group .rex-color-picker .select-color {
+    padding: 0 12px;
+  }
+
+  #rx-insta-feed-admin .rex-form-group .rexTooltip > span {
+    top: inherit;
+    right: 0;
+    left: inherit;
+    -webkit-transform: inherit;
+    -moz-transform: inherit;
+    -ms-transform: inherit;
+    -o-transform: inherit;
+    transform: inherit;
+    bottom: 48px;
+  }
+  #rx-insta-feed-admin .rex-form-group .rexTooltip > span:before {
+    left: inherit;
+    top: inherit;
+    -webkit-transform: translateY(0) rotate(90deg);
+    -moz-transform: translateY(0) rotate(90deg);
+    -ms-transform: translateY(0) rotate(90deg);
+    -o-transform: translateY(0) rotate(90deg);
+    transform: translateY(0) rotate(90deg);
+    bottom: -9px;
+    right: 17px;
+  }
+  #rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content .content-wrapper {
+    padding: 24px 20px;
+  }
+
+  /*----------feed tab----------*/
+  #rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content .nav-tabs {
+    padding: 12px 20px 12px 20px;
+  }
+  #rx-insta-feed-admin .stream-list {
+    padding: 20px 20px;
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul {
+    display: block;
+    border-bottom-color: transparent;
+    background: #f5f6fa;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul:last-child {
+    margin-bottom: 0;
+  }
+  #rx-insta-feed-admin .stream-list .list-wrapper > ul.list-header {
+    display: none;
+  }
+
+  /*---feed list---*/
+  #rx-insta-feed-admin .stream-list .list-wrapper > ul li {
+    position: relative;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 7px 0 7px 120px;
+  }
+  #rx-insta-feed-admin .stream-list .list-wrapper > ul li:last-child {
+    border-bottom: none;
+  }
+  #rx-insta-feed-admin .stream-list .list-wrapper > ul li:before {
+    content: "Last Update :";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 108px;
+    text-align: left;
+    font-weight: 700;
+    color: #242424 !important;
+    text-transform: capitalize;
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul li.stream-sl:before {
+    top: 11px;
+    content: "SL :";
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul li.stream-name:before {
+    content: "feed name :";
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul li.action-btn:before {
+    content: "actions :";
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul li.stream-type:before {
+    content: "Feed type :";
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul li.settings:before {
+    content: "settings :";
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul li.last-update:before {
+    content: "last update :";
+  }
+  #rx-insta-feed-admin .feed-list .list-wrapper > ul li.activeness:before {
+    content: "active :";
+    top: 14px;
+  }
+
+  /*---settings tab----*/
+  #rx-insta-feed-admin .status-tab-content .tab-content-header,
+  #rx-insta-feed-admin .settings-tab-content .settings-tab-header,
+  #rx-insta-feed-admin .authorize-tab-content .tab-content-header {
+    padding: 12px 20px 12px 20px;
+  }
+  #rx-insta-feed-admin .status-tab-content .content-wrapper,
+  #rx-insta-feed-admin .authorize-tab-content .tab-content-body,
+  #rx-insta-feed-admin .settings-tab-content .content-wrapper {
+    padding: 20px;
+  }
+  #rx-insta-feed-admin
+    .authorize-tab-content
+    .tab-content-body
+    .rex-form-group
+    input {
+    max-width: 420px;
+  }
+
+  #rx-insta-feed-admin .status-tab-content .content-wrapper ul li {
+    font-size: 15px;
+  }
+  #rx-insta-feed-admin .status-tab-content .content-wrapper ul li .title {
+    min-width: 110px;
+  }
+  #rx-insta-feed-admin .status-tab-content .content-wrapper ul li .value svg {
+    font-size: 14px;
+  }
+  #rx-insta-feed-admin .status-tab-content .content-wrapper ul li .value small {
+    font-size: 13px;
+  }
+} /*--end media query 992-1199px--*/
+
+/* ====================Tab Screen==============*/
+@media (max-width: 991px) {
+  #rx-insta-feed-admin .wrap {
+    margin-left: -10px !important;
+  }
+  #rx-insta-feed-admin
+    .authorize-tab-content
+    .tab-content-body
+    .rex-form-group
+    input {
+    max-width: 364px;
+  }
+  #rx-insta-feed-admin .stream-name-typo input {
+    width: 80px;
+    margin-right: 10px;
+  }
+  #rx-insta-feed-admin .rex-form-group.glryBorderOption .input-title {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+} /*--end media query 768-991px--*/
+
+/* ===================Medium Mobile Screen==============*/
+@media (max-width: 767px) {
+  #rx-insta-feed-admin .mainTab {
+    display: block;
+  }
+  #rx-insta-feed-admin .mainTab > .tab-content {
+    width: 100%;
+    padding: 0 20px 20px;
+  }
+  #rx-insta-feed-admin .mainTab > .nav-tabs {
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+  #rx-insta-feed-admin .mainTab > .nav-tabs .nav-item {
+    width: 50%;
+  }
+  #rx-insta-feed-admin .mainTab > .nav-tabs .nav-item:before {
+    width: 100%;
+    height: 2px;
+    top: inherit;
+    bottom: -1px;
+  }
+  #rx-insta-feed-admin .mainTab > .nav-tabs .nav-item.active {
+    box-shadow: none;
+  }
+  #rx-insta-feed-admin .status-tab-content .content-wrapper,
+  #rx-insta-feed-admin .authorize-tab-content .tab-content-body,
+  #rx-insta-feed-admin .settings-tab-content .content-wrapper {
+    margin: 30px 0px 20px 0px;
+  }
+  #rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content > .tab-content,
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    > .content-warapper {
+    padding-left: 0;
+  }
+  #rx-insta-feed-admin .feedListWrapper {
+    padding-left: 0;
+  }
+  #rx-insta-feed-admin .rex-form-group .rex-color-picker .select-color {
+    padding: 0 16px;
+  }
+  #rx-insta-feed-admin .rex-form-group .input-title {
+    min-width: 186px;
+  }
+  #rx-insta-feed-admin .radio-common li {
+    margin-right: 26px;
+  }
+  #rx-insta-feed-admin .radio-common li:last-child {
+    margin-right: 0;
+  }
+  #rx-insta-feed-admin .rex-form-group .hints {
+    padding-left: 202px;
+  }
+
+  #rx-insta-feed-admin
+    .authorize-tab-content
+    .tab-content-body
+    .rex-form-group {
+    display: block;
+  }
+  #rx-insta-feed-admin
+    .authorize-tab-content
+    .tab-content-body
+    .rex-form-group
+    .input-title {
+    display: block;
+    margin-bottom: 6px;
+  }
+  #rx-insta-feed-admin
+    .authorize-tab-content
+    .tab-content-body
+    .rex-form-group
+    input {
+    max-width: 100%;
+  }
+  #rx-insta-feed-admin .authorize-tab-content .tab-content-body .logout-btn {
+    margin-left: 0;
+  }
+
+  #rx-insta-feed-admin .stream-name-typo .input-title {
+    margin-right: 0;
+    margin-bottom: 5px;
+    min-width: 100%;
+  }
+  #rx-insta-feed-admin .stream-name-typo .hints {
+    padding-left: 20px;
+    width: auto;
+  }
+} /*--end media query 576-767px--*/
+
+/* ==================Small Mobile Display==============*/
+@media (max-width: 575px) {
+  #rx-insta-feed-admin .mainTab > .nav-tabs .nav-item span {
+    width: 137px;
+  }
+
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    > .content-warapper
+    .nav-tabs
+    a {
+    font-weight: 500;
+    padding: 10px 12px;
+    width: 46%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    > .content-warapper
+    .nav-tabs
+    a:after {
+    display: none;
+  }
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    > .content-warapper {
+    margin-top: 50px;
+  }
+  #rx-insta-feed-admin
+    .stream-parent-tab
+    > .tab-content
+    > .tab-pane
+    .deleteStream {
+    top: -20px;
+    right: inherit;
+    left: 0;
+  }
+
+  #rx-insta-feed-admin .rex-form-group {
+    margin-bottom: 25px;
+    display: block;
+  }
+  #rx-insta-feed-admin .rex-form-group .input-title {
+    display: block;
+    margin-bottom: 6px;
+  }
+  #rx-insta-feed-admin .rex-form-group .rrs__label,
+  #rx-insta-feed-admin input {
+    width: 100%;
+  }
+  #rx-insta-feed-admin .stream-connect .rex-form-group .rrs__button,
+  #rx-insta-feed-admin .stream-connect .rex-form-group .rrs__label {
+    width: 100%;
+    height: 50px;
+  }
+  #rx-insta-feed-admin .stream-connect .rex-form-group button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  #rx-insta-feed-admin .rex-form-group .rrs__label,
+  #rx-insta-feed-admin input {
+    padding: 6px 15px;
+  }
+  #rx-insta-feed-admin .rex-form-group .hints {
+    padding-left: 0;
+  }
+  #rx-insta-feed-admin .shortcode-tab .rex-form-group .copyClipboard {
+    margin-left: 0;
+    top: 0;
+    margin-top: 10px;
+  }
+  #rx-insta-feed-admin .radio-common li {
+    margin-bottom: 23px;
+  }
+  #rx-insta-feed-admin .rex-form-group .rex-color-picker {
+    max-width: 190px;
+  }
+  #rx-insta-feed-admin #rex-feed-tabpane-stream .btnStyle .btnTypho input {
+    width: 190px;
+    margin-bottom: 10px;
+  }
+  #rx-insta-feed-admin .stream-name-typo input {
+    width: 190px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #rx-insta-feed-admin #rex-feed-tabpane-feeds .feed-content .nav-tabs {
+    justify-content: center;
+  }
+  #rx-insta-feed-admin
+    #rex-feed-tabpane-feeds
+    .feed-content
+    > .nav-tabs
+    #rex-stream-repeat-tab-createFeedStream {
+    margin-bottom: 5px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #rx-insta-feed-admin .settings-tab-content .rex-form-group input {
+    width: 190px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #rx-insta-feed-admin .rex-form-group.db-save {
+    display: flex;
+  }
+  #rx-insta-feed-admin .rex-form-group.db-save .input-title {
+    min-width: auto;
+    width: 157px;
+    white-space: pre;
+  }
+  #rx-insta-feed-admin .rex-form-group.db-save .rexTooltip {
+    margin-left: 6px;
+  }
+  #rx-insta-feed-admin .shortcode-tab .rex-form-group input {
+    width: 100%;
+  }
+
+  #rx-insta-feed-admin .glryBorderOption.rex-form-group input {
+    width: 190px;
+    padding: 6px 12px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  #rx-insta-feed-admin .glryBorderOption.rex-form-group .rrs__button,
+  #rx-insta-feed-admin .glryBorderOption.rex-form-group .rrs__label {
+    width: 190px;
+  }
+  #rx-insta-feed-admin .glryBorderOption.rex-form-group .rex-color-picker {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #rx-insta-feed-admin .status-tab-content .content-wrapper ul li {
+    display: block;
+  }
+} /*--end media query 0-575px--*/

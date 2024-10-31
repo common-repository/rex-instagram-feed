@@ -1,0 +1,20 @@
+{
+    "name": "rextheme/instagram_feed_creator",
+    "type": "project",
+    "authors": [
+        {
+            "name": "RexTheme",
+            "email": "rextheme@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "raiym/instagram-php-scraper": "^0.8.28",
+        "philipnewcomer/wp-ajax-helper": "^1.0",
+        "a5hleyrich/wp-background-processing": "^1.0",
+        "appsero/client": "^1.0"
+    },
+    "autoload": {
+        "classmap": ["admin/", "public/"]
+    }
+}
